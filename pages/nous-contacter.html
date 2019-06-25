@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)file:///C:/Users/marie/Downloads/nous-contacter%20(2).html -->
+<html lang="fr-FR">
+    <head>
+        <title>Fat Burning : Calculator</title>
+        <link href="../css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../css/contact.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="favicon.ico" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Virginie Bosc & Juliette Delaunay & Marie Giannoni & Charlotte Suarez">
+        <meta name="description" content="Calculer le nombre de calories que vous avez brûlées lors de votre dernière séance de sport. Trouvez des informations sur différents sports qui pourraient vous permettre de remplir vos objectifs de perte de poids, de renforcement musculaire ou tout simplement de bien vous amuser !">
+    </head>
+    <body>
+        <header>
+            <picture>
+                <source media="(max-width:576px)" srcset="../images/banniere_small.png">
+                <source srcset="../images/banniere.png">
+                <img src="../images/banniere.png" alt="Fat Burning Calculator : Silhoutte d'un homme qui court sur un dégradé de bleu avec le logo Fat Burning">
+                <!-- Image basée sur la création originale de ShiftGraphiX sur Pixabay :
+                https://pixabay.com/fr/couple-stoppie-sportive-vélomoteur-3156613/ -->
+            </picture>
+            <nav>
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="calculateur.html">Calculateur</a></li>
+                    <li><a href="sport1.html">Natation</a></li>
+                    <li><a href="sport2.html">Course</a></li>
+                    <li><a href="sport3.html">Cyclisme</a></li>
+                    <li><a href="sport4.html">Yoga</a></li>
+                    <li><a href="nous-contacter.html">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="nous">
+            <h1>Nous connaître : </h1>
+            <p>Nous sommes quatre étudiantes en troisième année à l'ISEN Toulon. Passionnées par le sport, notre projet nous
+                a amenées à réaliser ce calculateur de calories pour les sportifs.
+            </p>
+            <picture>
+                <source srcset="../images/nous.png">
+                <img src="file:///C:/Users/marie/images/nous.png" alt="Photo de l&#39;équipe du projet FatBurning représentant quatre filles">
+            </picture>
+
+        </section>
+
+        <section id="contact">
+            <h1>Nous contacter :</h1>
+            <form name="form_contact" id="form_contact" action="http://gil83.fr/nolark/testforms.php" method="POST">
+                <fieldset id="coordo">
+                    <legend>Pour mieux vous connaître</legend>
+                    <div><label for="i_nom">Votre nom :</label> <input type="text" name="i_nom" id="i_nom" size="35" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$"><div class="input-validation"></div></div>
+                    <div><label for="i_prenom">Votre prénom :</label> <input type="text" name="i_prenom" id="i_prenom" size="35" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$"><div class="input-validation"></div></div>
+                    <div><label for="i_email">Votre e-mail :</label> <input type="email" name="i_email" id="i_email" size="35" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><div class="input-validation"></div></div>
+                    <div>
+                        <label for="lst_typesport">Votre niveau en sport : </label>
+                        <select name="lst_typesport" id="lst_typesport">
+                            <option value="1">Débutant</option>
+                            <option value="2">Intermédiaire</option>
+                            <option value="3">Confirmé</option>
+                        </select>
+                    </div>
+
+
+
+                    <fieldset id="sports">
+                        <legend>Sports pratiqués</legend>
+                        <table>
+                            <tbody><tr>
+                                <td><input type="checkbox" name="chk_sports[]" id="chk_course" value="course"><label for="chk_course">Course à pied</label></td>
+                                <td><input type="checkbox" name="chk_sports[]" id="chk_marche" value="marche"><label for="chk_marche">Marche</label></td>
+                                <td><input type="checkbox" name="chk_sports[]" id="chk_velo" value="velo"><label for="chk_velo">Vélo</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="chk_sports[]" id="chk_natation" value="natation"><label for="chk_natation">Natation</label></td>
+                                <td><input type="checkbox" name="chk_sports[]" id="chk_yoga" value="yoga"><label for="chk_yoga">Yoga</label></td>
+                                <td><input type="checkbox" name="chk_sports[]" id="chk_fitness" value="fitness"><label for="chk_fitness">Fitness</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="chk_sports[]" id="chk_tennis" value="tennis"><label for="chk_tennis">Tennis</label></td>
+                                <td><input type="checkbox" name="chk_sports[]" id="chk_handball" value="handball"><label for="chk_handball">Handball</label></td>
+                                <td><input type="checkbox" name="chk_sports[]" id="chk_football" value="football"><label for="chk_football">Football</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="chk_sports[]" id="chk_rugby" value="rugby"><label for="chk_rugby">Rugby</label></td>
+                                <td><input type="checkbox" name="chk_sports[]" id="chk_basket" value="basket"><label for="chk_basket">Basketball</label></td>
+                                <td><input type="checkbox" name="chk_sports[]" id="chk_escalade" value="escalade"><label for="chk_escalade">Escalade</label></td>
+                            </tr>
+                        </tbody></table>
+                    </fieldset>
+
+
+                    <div>
+                        <label>Date de naissance : </label>
+                        <input type="number" name="num_jour" id="num_jour" min="1" max="31"> / <input type="number" name="num_mois" id="num_mois" min="1" max="12"> / <input type="number" name="num_annee" id="num_annee" min="1900" max="2016">
+                    </div>
+
+                </fieldset>
+                <fieldset id="motif">
+                    <legend>Motif du contact</legend>
+                    <div><input type="radio" name="rd_motif" value="deminfo" id="rd_deminfo"> <label for="rd_deminfo">Demande d'informations</label></div>
+                    <div><input type="radio" name="rd_motif" value="reclam" id="rd_reclam"> <label for="rd_reclam">Réclamation</label></div>
+                    <div><input type="radio" name="rd_motif" value="autre" id="rd_autre"> <label for="rd_autre">Autre...</label></div>
+                    <div><label for="area_precisions">Si "Autre", veuillez préciser :</label><br><textarea name="area_precisions" id="area_precisions" cols="35" rows="10"></textarea></div>
+                </fieldset>
+                <div id="controles"><input type="button" id="btn_envoyer" name="sub_envoyer" value="Envoyer votre demande de contact"> <input type="reset" name="rst_annuler" value="Effacer les réponses"></div>
+            </form>
+        </section>
+        <footer>
+            <p>©2019 Fat Burning Calculator - Créé par <a href="mailto:">Virginie BOSC &amp; Juliette DELAUNAY &amp; Marie GIANNONI &amp; Charlotte SUAREZ</a>
+        </p></footer>     
+    
+
+</body></html>

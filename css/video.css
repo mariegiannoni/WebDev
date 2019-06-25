@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24 juin 2019, 19:47:23
+    Author     : juliette.delaunay
+*/
+
+#video iframe {
+       display: flex; /* Ce conteneur est "flexible" */   
+       justify-content: center; /* Les éléments portés sont centrés à l'horizontal */    
+       flex-direction: column; /* Les éléments sont empilés */  
+       align-items: center; /* Les éléments portés sont centrés à la verticale */ 
+       margin-right: 250px; /* La page occupe toute la largeur */ 
+       margin-left: 50px;
+       padding-top: 30px;
+       padding-bottom: 15px;
+}
+
+/* Smartphone */
+@media screen and (max-width:768px) {
+    #video {
+        flex-direction: column;
+    }
+
+    #video iframe {
+        align-self: center;
+    }
+}
