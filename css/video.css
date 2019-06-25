@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : juliette.delaunay
 */
 
-#video iframe {
+#video_course_yoga iframe {
        display: flex; /* Ce conteneur est "flexible" */   
        justify-content: center; /* Les éléments portés sont centrés à l'horizontal */    
        flex-direction: column; /* Les éléments sont empilés */  
@@ -17,6 +17,15 @@ and open the template in the editor.
        margin-left: 50px;
        padding-top: 30px;
        padding-bottom: 15px;
+}
+
+#video_cyclisme_natation {
+    display: flex; /* Ce conteneur est "flexible" */   
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */    
+    flex-direction: column; /* Les éléments sont empilés */  
+    align-items: center; /* Les éléments portés sont centrés à la verticale */ 
+    width: 100%;
+    padding-bottom: 15px;
 }
 
 /* Smartphone */
